@@ -12,7 +12,7 @@ import lombok.NoArgsConstructor;
 @ConfigurationProperties(prefix="openai")
 public class OpenaiProperties {
 
-    private String  apiKey = "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" ;
+    private String  apiKey = "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" ;
     private String model = "text-davinci-003";
     private int maxTokens =2600;
     private int temperature = 0;

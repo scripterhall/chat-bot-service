@@ -35,9 +35,9 @@ public class QuestionService {
 
     public Question reformulerQuestion(Question questionPrecedente,Question questionActuelle){
           
-        if(questionPrecedente!=null){
+        if(questionPrecedente!=null && responseRepository.count()>0){
+
             Reponse repPrecedente  = this.responseRepository.findFirstByOrderByIdDesc();
-            System.out.println("++++++"+repPrecedente);
             questionActuelle.setText(
                 "/'reponse precedente : /'"
                 +repPrecedente.getText()
